@@ -20,7 +20,10 @@
             <a href="#ofertas">Ofertas</a>
         </nav>
         <div class="cart">
-            <button class="btn-icon" aria-label="Carrito">🛒</button>
+            <button class="btn-icon" aria-label="Carrito" style="position: relative;">
+                🛒
+                <span class="cart-badge" id="cart-badge">0</span>
+            </button>
         </div>
     </header>
 
@@ -152,6 +155,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">¡Producto agregado al carrito exitosamente!</div>
 
     <script src="script.js"></script>
 </body>
