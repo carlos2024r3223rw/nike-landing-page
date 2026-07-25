@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Alphafly Next% - Tienda Oficial</title>
+    <meta name="description" content="Descubre la nueva colección de zapatillas Nike. Rápidas, ligeras y con el mejor estilo.">
+    <!-- Cargamos los estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuentes modernas desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <!-- Logo oficial de Nike desde fuente externa confiable para mayor realismo -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" alt="Nike Logo Oficial" width="60" height="auto">
+        </div>
+        <nav class="nav-links">
+            <a href="#hombres">Hombres</a>
+            <a href="#mujeres">Mujeres</a>
+            <a href="#ninos">Niños</a>
+            <a href="#ofertas">Ofertas</a>
+        </nav>
+        <div class="cart">
+            <button class="btn-icon" aria-label="Carrito">🛒</button>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <!-- Prueba Social y Confianza -->
+            <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">4.8/5 (120 opiniones verificadas)</span>
+            </div>
+            
+            <h1>NIKE ALPHAFLY<br><span class="highlight">NEXT%</span></h1>
+            
+            <!-- Subtítulo con mejor contraste -->
+            <p class="subtitle">Diseñadas para romper récords. Velocidad, ligereza y el máximo retorno de energía en cada paso.</p>
+            
+            <!-- Información de Precio -->
+            <div class="price-section">
+                <span class="price">$275.00</span>
+                <span class="price-old">$300.00</span>
+                <span class="discount-badge">-8%</span>
+            </div>
+
+            <!-- Especificaciones Clave -->
+            <ul class="specs">
+                <li><strong>Uso:</strong> Competición / Maratón</li>
+                <li><strong>Drop:</strong> 8 mm</li>
+                <li><strong>Peso:</strong> 210g (Talla 42)</li>
+                <li><strong>Amortiguación:</strong> ZoomX + Cápsulas de aire</li>
+            </ul>
+
+            <!-- Selección de Talla -->
+            <div class="options">
+                <div class="options-header">
+                    <h3>Selecciona tu talla (EU)</h3>
+                    <a href="#" class="size-guide">Guía de tallas</a>
+                </div>
+                <div class="size-grid" id="size-grid">
+                    <button class="size-btn">39</button>
+                    <button class="size-btn">40</button>
+                    <button class="size-btn">41</button>
+                    <button class="size-btn selected">42</button>
+                    <button class="size-btn">43</button>
+                    <button class="size-btn out-of-stock" disabled>44</button>
+                </div>
+            </div>
+
+            <!-- Selección de Color -->
+            <div class="options">
+                <h3>Color disponible</h3>
+                <div class="color-grid" id="color-grid">
+                    <button class="color-btn color-white selected" aria-label="Gris Claro/Blanco"></button>
+                    <button class="color-btn color-black" aria-label="Negro"></button>
+                    <button class="color-btn color-neon" aria-label="Verde Neón"></button>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="hero-buttons">
+                <button class="btn-primary" id="btn-comprar">Agregar al carrito</button>
+            </div>
+
+            <!-- Garantías y Trust Badges -->
+            <div class="trust-badges">
+                <div class="badge"><span class="icon">🚚</span> Envío gratis</div>
+                <div class="badge"><span class="icon">🔄</span> Devolución 30 días</div>
+                <div class="badge"><span class="icon">🔒</span> Pago 100% seguro</div>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <img src="assets/shoe.png" alt="Zapatillas Nike Alphafly Next% flotando" class="floating-shoe">
+        </div>
+    </main>
+
+    <!-- Detalles del Producto: Acordeón y Reseñas -->
+    <section class="product-details">
+        
+        <!-- Acordeón Técnico -->
+        <div class="technical-accordion">
+            <h2>Detalles del Producto</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Innovación ZoomX
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Nuestra espuma Nike ZoomX es increíblemente reactiva y ligera. Te brinda un mayor retorno de energía para ayudarte a alcanzar tus metas, desde tus entrenamientos diarios hasta el día de la carrera.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Placa de Fibra de Carbono
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Una placa de fibra de carbono completa proporciona una sensación de propulsión que te ayuda a realizar transiciones suaves en cada zancada. Es el secreto detrás de los récords mundiales.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Material AtomKnit
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>La parte superior AtomKnit forma parte de la familia Flyknit. El material se estira, se moldea a la forma del pie y brinda un ajuste ligero y transpirable que absorbe menos sudor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reseñas de Clientes -->
+        <div class="reviews-section">
+            <div class="reviews-header">
+                <h2>Opiniones</h2>
+                <div class="overall-rating">
+                    <span class="stars">★★★★★</span> 4.8
+                </div>
+            </div>
+
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <h4 class="review-title">Mejores tiempos garantizados</h4>
+                <p class="review-text">Increíble sensación de propulsión. Logré mi mejor marca personal en la media maratón gracias a estas zapatillas. Se sienten muy ligeras.</p>
+                <div class="review-author">Por Carlos M. - 12 Jul 2026 ✔ Comprador Verificado</div>
+            </div>
+
+            <div class="review-item">
+                <div class="review-stars">★★★★★</div>
+                <h4 class="review-title">Comodidad y Reactividad</h4>
+                <p class="review-text">La amortiguación ZoomX es de otro mundo. Sientes que flotas. El único detalle es que hay que acostumbrarse al arco elevado, pero valen cada centavo.</p>
+                <div class="review-author">Por Elena G. - 28 Jun 2026 ✔ Comprador Verificado</div>
+            </div>
+
+            <div class="review-item">
+                <div class="review-stars">★★★★☆</div>
+                <h4 class="review-title">Muy rápidas pero delicadas</h4>
+                <p class="review-text">Son para competir, no para el día a día. El desgaste de la suela es un poco rápido si las usas en entrenamientos normales. ¡Pero en carrera vuelan!</p>
+                <div class="review-author">Por Roberto D. - 05 Jun 2026 ✔ Comprador Verificado</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
