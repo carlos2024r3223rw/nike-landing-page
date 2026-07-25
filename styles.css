@@ -2,7 +2,7 @@
     --primary-color: #111111;
     --accent-color: #f0f0f0;
     --text-color: #111111;
-    --text-secondary: #4a4a4a; /* Oscurecido para mejorar el contraste y la legibilidad */
+    --text-secondary: #4a4a4a;
     --bg-color: #ffffff;
     --btn-primary: #111111;
     --btn-primary-text: #ffffff;
@@ -23,7 +23,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -65,7 +64,6 @@ body {
     transform: scale(1.1);
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -81,7 +79,6 @@ body {
     max-width: 600px;
 }
 
-/* Rating / Social Proof */
 .rating {
     display: flex;
     align-items: center;
@@ -90,7 +87,7 @@ body {
 }
 
 .stars {
-    color: #fbbf24; /* Color dorado para las estrellas */
+    color: #fbbf24;
     font-size: 1.2rem;
     letter-spacing: 2px;
 }
@@ -101,7 +98,6 @@ body {
     font-weight: 500;
 }
 
-/* Typography */
 .hero-content h1 {
     font-family: 'Oswald', sans-serif;
     font-size: 5.5rem;
@@ -117,12 +113,11 @@ body {
 
 .subtitle {
     font-size: 1.15rem;
-    color: var(--text-secondary); /* Ahora es mucho más legible */
+    color: var(--text-secondary);
     margin-bottom: 25px;
     line-height: 1.6;
 }
 
-/* Price Section */
 .price-section {
     display: flex;
     align-items: center;
@@ -138,7 +133,7 @@ body {
 
 .price-old {
     font-size: 1.2rem;
-    color: #666; /* Subido el contraste para mejorar la lectura */
+    color: #666;
     text-decoration: line-through;
     font-weight: 500;
 }
@@ -152,7 +147,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Especificaciones */
 .specs {
     list-style: none;
     margin-bottom: 30px;
@@ -174,7 +168,6 @@ body {
     color: var(--text-color);
 }
 
-/* Options (Tallas y Colores) */
 .options {
     margin-bottom: 25px;
 }
@@ -243,7 +236,7 @@ body {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    border: 2px solid white; /* Espacio interior para el borde fino */
+    border: 2px solid white;
     box-shadow: 0 0 0 1px var(--border-color);
     cursor: pointer;
     transition: all 0.2s;
@@ -254,14 +247,13 @@ body {
 }
 
 .color-btn.selected {
-    box-shadow: 0 0 0 2px var(--primary-color); /* Borde fino y claro al seleccionar */
+    box-shadow: 0 0 0 2px var(--primary-color);
 }
 
-.color-white { background-color: #e5e7eb; } /* Representa el gris/blanco */
+.color-white { background-color: #e5e7eb; }
 .color-black { background-color: #111111; }
 .color-neon { background-color: #84cc16; }
 
-/* Buttons */
 .hero-buttons {
     margin-bottom: 25px;
     display: flex;
@@ -287,7 +279,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Trust Badges */
 .trust-badges {
     display: flex;
     gap: 20px;
@@ -309,7 +300,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Hero Image */
 .hero-image {
     flex: 1;
     display: flex;
@@ -331,7 +321,6 @@ body {
     100% { transform: translateY(0px) rotate(0deg); }
 }
 
-/* Secciones Inferiores (Acordeón y Reseñas) */
 .product-details {
     padding: 60px max(5%, calc((100vw - 1200px) / 2));
     display: grid;
@@ -339,7 +328,6 @@ body {
     gap: 60px;
 }
 
-/* Acordeón (Detalles Técnicos) */
 .technical-accordion h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
@@ -368,7 +356,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: var(--text-color);
-    outline: none; /* Elimina el borde azul/negro por defecto que se ve roto */
+    outline: none;
 }
 
 .accordion-header .icon {
@@ -394,7 +382,6 @@ body {
     padding-bottom: 20px;
 }
 
-/* Sección de Reseñas */
 .reviews-section {
     background: #f9f9f9;
     padding: 30px;
@@ -458,7 +445,6 @@ body {
     color: #888;
 }
 
-/* Responsive */
 @media (max-width: 960px) {
     .product-details {
         grid-template-columns: 1fr;
@@ -472,7 +458,7 @@ body {
     .hero-image {
         max-width: 100%;
         margin-top: 20px;
-        order: -1; /* Pone la imagen arriba en móviles */
+        order: -1;
     }
 
     .hero-content h1 {
@@ -480,7 +466,7 @@ body {
     }
     
     .specs {
-        grid-template-columns: 1fr; /* Una columna en móvil */
+        grid-template-columns: 1fr;
     }
 
     .nav-links {
