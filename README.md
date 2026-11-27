@@ -1,41 +1,55 @@
-# Nike Alphafly Next% - Landing Page 👟
+# Nike Alphafly Next% Landing Page
 
-Una **Landing Page** de estilo e-commerce diseñada con un enfoque total en la **Conversión (CRO)**, la **Experiencia de Usuario (UX)** y el **Rendimiento**. 
+A responsive product landing page built as a front-end portfolio project. It presents a Nike Alphafly Next% concept with product information, visual purchase cues, and lightweight interactions using HTML, CSS, and JavaScript.
 
-Este proyecto simula la página de producto de unas zapatillas deportivas de alta gama, demostrando que es posible crear interfaces modernas, rápidas y atractivas sin depender de frameworks o librerías pesadas.
+> This is an independent UI concept, not an official Nike website or a functioning store. Prices, ratings, reviews, availability, shipping claims, and payment messaging are sample content. There is no checkout, backend, or real order processing.
 
-## 🚀 Tecnologías Utilizadas
+## Features
 
-- **HTML5 Semántico**: Estructura limpia y accesible.
-- **CSS3 (Vanilla)**: Uso intensivo de Flexbox, Grid, Variables Nativas (Custom Properties) y animaciones por hardware (GPU) para máxima fluidez.
-- **Vanilla JavaScript (ES6)**: Interactividad ligera para simulaciones del carrito y selectores, manteniendo el peso de la página al mínimo.
+- Responsive product layout with a shoe image, pricing, specifications, and a prominent call to action.
+- Selectable EU shoe sizes and color swatches; the unavailable size is disabled.
+- Demo add-to-cart interaction with a visual count, temporary button state, and toast notification.
+- Expandable product details accordion.
+- EN/ES language switch for the page content and interaction feedback.
+- Static customer review examples and trust badges as part of the page design.
 
-## ✨ Características Principales (UX / CRO)
+## Tech stack
 
-- **Diseño Orientado a la Conversión**: Botones de llamada a la acción (CTA) grandes, jerarquía de precios con distintivo de descuento y colores de alto contraste.
-- **Prueba Social (Social Proof)**: Integración de estrellas de valoración y una sección dedicada a opiniones de clientes verificados.
-- **Señales de Confianza**: Inclusión de *Trust Badges* (Envío gratis, devoluciones, pago seguro) justo debajo del botón de compra.
-- **Simulador de Carrito Interactivo**: 
-  - Contador dinámico en el icono del menú superior.
-  - Alerta *Toast* emergente animada y temporal.
-  - Cambio de estado del botón de compra a verde ("¡Agregado!") para dar un excelente *feedback* visual.
-- **Acordeón Técnico**: Sección de detalles técnicos colapsable creada desde cero con JS y transiciones suaves de CSS.
-- **Micro-interacciones**: Detalles premium como el borde de selección en los colores y animaciones sutiles (*hover*) en los botones.
+- Semantic HTML
+- CSS with custom properties, Flexbox, Grid, transitions, and a responsive breakpoint
+- Vanilla JavaScript for the UI interactions
 
-## 💻 Instalación y Uso
+## Run locally
 
-Dado que el proyecto utiliza tecnologías web nativas, no es necesario instalar `npm` ni ningún empaquetador.
+No package manager, build step, or dependencies are required.
 
-1. Clona el repositorio:
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/carlos2024r3223rw/landing-page.git
+   git clone https://github.com/carlos2024r3223rw/nike-landing-page.git
+   cd nike-landing-page
    ```
-2. Abre la carpeta del proyecto.
-3. Haz doble clic en el archivo `index.html` para visualizarlo en tu navegador favorito.
 
-## 📱 Responsive Design
+2. Open `index.html` in a browser.
 
-La estructura se adapta perfectamente a dispositivos móviles y tablets. Se utilizaron Media Queries (`@media`) para reorganizar la distribución de 2 columnas a 1 columna apilada en pantallas pequeñas, asegurando que la imagen del producto quede en la parte superior en la vista móvil.
+You can also download the repository ZIP and open `index.html` directly.
 
----
-*Diseñado y desarrollado para demostrar buenas prácticas de Frontend y UI/UX.*
+## Screenshots
+
+Screenshots will be added here. The page currently includes the product artwork at `assets/shoe.png`; that image is not a screenshot of the interface.
+
+## Project structure
+
+```text
+nike-landing-page/
+├── assets/
+│   └── shoe.png
+├── index.html
+├── script.js
+├── styles.css
+└── README.md
+```
+
+## Notes
+
+The cart count is kept in browser memory for the current page session. Selecting a size or color changes its visual state; it does not update inventory, price, or the product image. The page opens in Spanish and has an EN/ES switch in the header. Language selection is reset when the page reloads.
