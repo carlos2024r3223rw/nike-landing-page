@@ -2,13 +2,13 @@
 
 A responsive product landing page built as a front-end portfolio project. It presents a Nike Alphafly Next% concept with product information, visual purchase cues, and lightweight interactions using HTML, CSS, and JavaScript.
 
-> This is an independent UI concept, not an official Nike website or a functioning store. Prices, ratings, reviews, availability, shipping claims, and payment messaging are sample content. There is no checkout, backend, or real order processing.
+> This is an independent UI concept, not an official Nike website or a functioning store. Prices, ratings, reviews, availability, shipping claims, and payment messaging are sample content. The checkout is a front-end simulation; there is no backend, payment processing, or real order.
 
 ## Features
 
 - Responsive product layout with a shoe image, pricing, specifications, and a prominent call to action.
 - Selectable EU shoe sizes and color swatches; the unavailable size is disabled.
-- Demo add-to-cart interaction with a visual count, temporary button state, and toast notification.
+- Demo cart with selected size and color, item quantities, subtotal, and a simulated purchase confirmation. No payment details are collected.
 - Expandable product details accordion.
 - EN/ES language switch for the page content and interaction feedback.
 - Static customer review examples and trust badges as part of the page design.
@@ -52,4 +52,4 @@ nike-landing-page/
 
 ## Notes
 
-The cart count is kept in browser memory for the current page session. Selecting a size or color changes its visual state; it does not update inventory, price, or the product image. The page opens in Spanish and has an EN/ES switch in the header. Language selection is reset when the page reloads.
+Cart items are kept in browser memory for the current page session. Selecting a size or color changes the cart variant; it does not update inventory, price, or the product image. The page opens in Spanish and has an EN/ES switch in the header. Language selection is reset when the page reloads.
