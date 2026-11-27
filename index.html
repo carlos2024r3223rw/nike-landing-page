@@ -20,16 +20,14 @@
             <a href="#ofertas">Ofertas</a>
         </nav>
         <div class="header-actions">
-        <div class="language-switch" role="group" aria-label="Language / Idioma">
-            <button type="button" class="language-btn" data-lang="en" aria-pressed="false">EN</button>
-            <button type="button" class="language-btn active" data-lang="es" aria-pressed="true">ES</button>
-        </div>
-        <div class="cart">
-            <button class="btn-icon" aria-label="Carrito" style="position: relative;">
-                🛒
-                <span class="cart-badge" id="cart-badge">0</span>
+            <div class="language-switch" role="group" aria-label="Language / Idioma">
+                <button type="button" class="language-btn" data-lang="en" aria-pressed="false">EN</button>
+                <button type="button" class="language-btn active" data-lang="es" aria-pressed="true">ES</button>
+            </div>
+            <button type="button" class="btn-icon cart-trigger" aria-label="Abrir carrito" aria-haspopup="dialog" aria-controls="cart-dialog">
+                <span class="cart-symbol" aria-hidden="true">🛒</span>
+                <span class="cart-badge" id="cart-badge" aria-hidden="true">0</span>
             </button>
-        </div>
         </div>
     </header>
 
@@ -163,7 +161,22 @@
     </section>
 
     <!-- Toast Notification -->
-    <div id="toast" class="toast">¡Producto agregado al carrito exitosamente!</div>
+    <div id="toast" class="toast" role="status" aria-live="polite">¡Producto agregado al carrito!</div>
+
+    <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title">
+        <div class="cart-dialog-header">
+            <div>
+                <p class="cart-eyebrow" id="cart-eyebrow">COMPRA DE DEMOSTRACIÓN</p>
+                <h2 id="cart-title">Tu carrito</h2>
+            </div>
+            <button type="button" class="cart-close" aria-label="Cerrar carrito">×</button>
+        </div>
+        <div id="cart-content" class="cart-content" aria-live="polite"></div>
+        <div class="cart-footer">
+            <button type="button" id="checkout-button" class="checkout-button">Simular compra</button>
+            <p id="demo-note">Demostración: no se realiza ningún pago ni pedido real.</p>
+        </div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
