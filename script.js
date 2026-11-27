@@ -98,11 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
         setText('.rating-text', copy.rating);
         setText('.subtitle', copy.subtitle);
         document.querySelectorAll('.specs li').forEach((item, index) => {
-            item.textContent = copy.specs[index];
+            const [label, value] = copy.specs[index].split(': ');
+            const strong = item.querySelector('strong');
+            strong.textContent = label + ':';
+            item.replaceChildren(strong, document.createTextNode(' ' + value));
         });
         setText('.options-header h3', copy.size);
         setText('.size-guide', copy.sizeGuide);
-        setText('.options:nth-of-type(2) h3', copy.color);
+        document.querySelectorAll('.options h3')[1].textContent = copy.color;
         document.querySelectorAll('.color-btn').forEach((button, index) => {
             button.setAttribute('aria-label', copy.colors[index]);
         });
