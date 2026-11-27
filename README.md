@@ -10,6 +10,7 @@ A responsive product landing page built as a front-end portfolio project. It pre
 - Selectable EU shoe sizes and color swatches; the unavailable size is disabled.
 - Demo add-to-cart interaction with a visual count, temporary button state, and toast notification.
 - Expandable product details accordion.
+- EN/ES language switch for the page content and interaction feedback.
 - Static customer review examples and trust badges as part of the page design.
 
 ## Tech stack
@@ -51,4 +52,4 @@ nike-landing-page/
 
 ## Notes
 
-The cart count is kept in browser memory for the current page session. Selecting a size or color changes its visual state; it does not update inventory, price, or the product image. The page content is currently in Spanish.
+The cart count is kept in browser memory for the current page session. Selecting a size or color changes its visual state; it does not update inventory, price, or the product image. The page opens in Spanish and has an EN/ES switch in the header. Language selection is reset when the page reloads.
