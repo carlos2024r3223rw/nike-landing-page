@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const translations = {
         es: {
-            title: 'Nike Alphafly Next% - Tienda Oficial',
+            title: 'Nike Alphafly Next% - Página de producto',
             description: 'Descubre la nueva colección de zapatillas Nike. Rápidas, ligeras y con el mejor estilo.',
             navigation: ['Hombres', 'Mujeres', 'Niños', 'Ofertas'],
             cart: 'Carrito',
